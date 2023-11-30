@@ -39,7 +39,6 @@ const characters = [
   new Character("Yoda", "yoda.png"),
 ];
 
-
 // creation container
 let containerSearch = document.createElement("div");
 containerSearch.classList.add("containerSearch");
@@ -69,7 +68,7 @@ containerIMG.classList.add("containerIMG");
 let paragraphe = document.createElement("p");
 
 // selection de la section par son nom de classe
-var searchBarDiv = document.querySelector('.searchBar');
+var searchBarDiv = document.querySelector(".searchBar");
 
 // apprenChild
 searchBarDiv.appendChild(titre);
@@ -82,19 +81,20 @@ containerSearch.appendChild(btn);
 // FUNCTION
 
 button.addEventListener("click", () => {
-
   characters.map((perso) => {
-    
-    if (input.value.trim() == perso.name.trim() || input.value.trim() == perso.name.toLowerCase() || input.value.trim() == perso.name.toUpperCase()) {
-
-      containerIMG.innerHTML = '';
+    if (
+      input.value.trim() == perso.name.trim() ||
+      input.value.trim() == perso.name.toLowerCase() ||
+      input.value.trim() == perso.name.toUpperCase()
+    ) {
+      containerIMG.innerHTML = "";
 
       // creation d'une div qui contiendra le nom et la photo du personnage
       let divPersonnage = document.createElement("div");
       divPersonnage.classList.add("divPersonnage");
       divPersonnage.style.height = "300px";
       divPersonnage.style.width = "300px";
-      divPersonnage.style.backgroundColor= "white";
+      divPersonnage.style.backgroundColor = "white";
 
       // affichage image des persos
       let imagePersonnage = document.createElement("img");
@@ -110,31 +110,22 @@ button.addEventListener("click", () => {
       containerIMG.appendChild(divPersonnage);
       divPersonnage.appendChild(personnage);
       divPersonnage.appendChild(imagePersonnage);
-
-    } 
-
-  });
-  
-  });
-
-
-// effacer les résultats de recherche
-input.addEventListener("input", () => {
-
-    characters.map((perso) => {
-
-    const recherche = input.value.trim(); // Obtenez le texte de recherche sans les espaces
-  
-    // Vérifiez si la barre de recherche est vide
-    if (recherche === "" || recherche !== perso.name) {
-      
-      containerIMG.innerHTML = '';
-
     }
+
+  });
 
 });
 
+// effacer les résultats de recherche
+input.addEventListener("input", () => {
+  characters.map((perso) => {
+    const recherche = input.value.trim(); // Obtenez le texte de recherche sans les espaces
+
+    // Vérifiez si la barre de recherche est vide
+    if (recherche === "" || recherche !== perso.name) {
+      containerIMG.innerHTML = "";
+    }
+
   });
-
-
-
+  
+});
