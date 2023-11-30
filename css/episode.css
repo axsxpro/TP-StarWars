@@ -1,0 +1,223 @@
+
+@media  screen and (min-width: 600px) {
+ 
+
+
+
+* {
+    font-family: 'Star Wars', sans-serif;
+}
+
+/* debut navbar */
+
+nav {
+
+    height : 200px;
+    display: flex;
+}
+
+
+.conteneurLogo {
+
+    border: solid black 2px;
+    height:200px;
+}
+
+.conteneurLogoEpisode{
+
+    display: flex;
+    border-bottom: black 2px solid;
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    background-image: url("../images/etoiles.gif");
+}
+
+/* fin navbar */
+
+
+/* debut conteneur fil d'arianne */
+
+.conteneurProgression {
+
+    display: flex;
+    justify-content: center;
+    /* border: solid red 2px; */
+    height: 50px;
+    background-image: url("../images/etoiles.gif");
+   
+}
+
+
+.filArianne {
+    display: flex;
+    align-items: center;
+    /* border: solid red 2px; */
+    height:50px;
+    
+    
+}
+
+.filArianne ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    list-style: none;
+    /* border: solid yellow 2px; */
+    height:20px;
+    padding-left: 0px;
+  
+}
+    
+.filArianne li:not(:last-child)::after {
+    content: "→";
+    color: white;
+}
+
+.filArianne a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.filArianne a:hover{
+
+    color: gold;
+}
+
+/* fin conteneur fil d'arianne */
+
+
+/* début baniere */
+
+.banniere{
+
+    /* border: white solid 2px; */
+    display: flex;
+    justify-content: center;
+    border: solid black 2px;
+    /* background-image: url("./images/etoiles.gif"); */
+
+}
+
+/* fin baniere */
+
+
+/* debut section episode */
+
+.episode{
+
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    /* border: solid yellow 2px; */
+    background-color: black;
+    background-image: url("../images/etoiles.gif");
+
+}
+
+.afficheEpisode{
+
+    border:solid goldenrod 2px;
+    margin: 60px;
+
+}
+
+.blocDescriptionEpisode{
+
+    display: block;
+    /* border:solid goldenrod 2px; */
+    margin: 60px;
+
+}
+
+.titreEpisode{
+    
+    border:solid goldenrod 2px;
+    text-align: center;
+    color: white;
+
+}
+
+.descriptionEpisode{
+    
+    text-align: center;
+    border:solid goldenrod 2px;
+    color: white;
+    height: 430px;
+    overflow: scroll;
+    padding: 50px;
+}
+
+/* fin section episode */
+
+
+/* bloc Personnages */
+
+.conteneurPersonnages {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    background-image: url("../images/etoiles.gif");
+
+}
+
+figcaption{
+
+margin-top: 50px;
+
+}
+
+/* fin bloc personnages */
+
+
+/* bloc video Youtube */
+
+.conteneurVideo{
+
+    /* border: solid goldenrod 2px; */
+    display: flex;
+    justify-content: center;
+    background-image: url("../images/etoiles.gif");
+    padding: 50px;
+}
+
+/* bloc video Youtube */
+
+
+/* debut bloc réseaux sociaux */
+
+.ReseauxSociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: goldenrod;
+}
+
+/* fin bloc réseaux sociaux */
+
+
+/* debut bloc copyright */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+}
+
+/* fin bloc copyright */
+
+
+/* fin footer  */
+
+} 

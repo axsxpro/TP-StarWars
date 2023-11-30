@@ -1,0 +1,312 @@
+
+@media screen and (min-width: 600px) {
+
+
+* {
+    font-family: 'Star Wars', sans-serif;
+}
+
+/* debut navbar */
+
+nav {
+
+    width:100%;
+    height : 200px;
+    display: flex;
+}
+
+
+.conteneurLogoEpisode{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../images/etoiles.gif");
+}
+
+.conteneurLogoEpisode a{
+
+    margin: 10px;
+}
+
+/* fin navbar */
+
+
+/* debut conteneur inscription/Connexion */
+
+.conteneurInscription {
+
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+    background-image: url("../images/etoiles.gif");
+    background-position: center;
+    background-size: contain;
+    background-color: black;
+    width:100%;
+}
+
+.btn{
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn input{
+    margin: 10px;
+}
+
+
+#inscription, #connexion {
+
+    width: 130px;
+    height:50px;
+    color:goldenrod;
+    border-color: white;
+    border-radius: 20px;
+}
+
+
+input:nth-child(1):hover {
+
+    box-shadow:
+    0 0 45px #fff,
+    inset 0 0 1px #fff,
+    0 0 16px #37f713,
+    inset 0 0 16px #37f713,
+    0 0 32px #37f713,
+    inset 0 0 32px #37f713; 
+}
+
+
+  input:nth-child(2):hover {
+
+    box-shadow:
+    0 0 45px #fff,
+    inset 0 0 1px #fff,
+    0 0 16px #180cf4,
+    inset 0 0 16px #180cf4,
+    0 0 32px #180cf4,
+    inset 0 0 32px #180cf4; 
+}
+
+/* fin conteneur inscription/Connexion */
+
+
+
+/* debut section episode */
+.episode{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 100px;
+    background-image: url("../images/etoiles.gif");
+    transition: transform .1s;
+
+}
+
+.episode  a :hover {
+
+    transform: scale(1.2);
+    box-shadow:
+    0 0 45px #fff,
+    inset 0 0 1px #fff,
+    0 0 16px #fff,
+    inset 0 0 16px #fff,
+    0 0 32px #fff,
+    inset 0 0 32px #fff; 
+
+}
+
+/* fin section episode */
+
+
+/* Partie du style pour le footer */
+/* Début footer */
+
+.footer {
+    
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    background-color: goldenrod;
+}
+
+/* reseaux sociaux */
+
+.ReseauxSociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: goldenrod;
+
+}
+
+
+/* partie newletter */
+
+.newletter {
+
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    margin-top: 10px;
+    
+}
+
+.mailinput {
+    display: flex;
+    justify-content: center;
+}
+
+.newletter h1 {
+    font-size: medium;
+    margin-bottom: 10px;
+    color: white;
+}
+
+.mailinput input {
+    width: 250px;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 10px;
+    background: whitesmoke;
+    
+}
+
+.mailinput button {
+
+    background-color: black;
+    color: white;
+    
+}
+
+.newletter p {
+    margin-top: 20px;
+    color: white;
+}
+
+
+/* Partie concernant les CGV et les copyright */
+
+.cgv {
+    display: flex;
+    color: beige;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    margin-top: 2px;
+    background-color: black;
+}
+
+.cgv2 li, .cgv3 li, .cgv1 li {
+    margin-bottom: 15px;
+
+}
+
+.cgv2 a, .cgv3 a, .cgv1 a {
+    text-decoration: none;
+    color: white;
+}
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+
+}
+
+li {
+    list-style: none;
+}
+
+/* fin footer  */
+
+
+/* searchBar StarWars */
+
+.searchBar {
+
+    border: solid black 2px;
+    background-image: url("../images/etoiles.gif");
+
+}
+
+.containerSearch{
+
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    margin: 50px;
+
+}
+
+#inputStarWars {
+
+    margin-right: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    width: 300px;
+    border: 2px solid gold;
+}
+
+
+#inputStarWars:hover {
+
+    box-shadow:
+    0 0 45px #fff,
+    inset 0 0 1px #fff,
+    0 0 16px #c6b322,
+    inset 0 0 16px #c6b322,
+    0 0 32px #c6b322,
+    inset 0 0 32px #c6b322; 
+}
+
+#button {
+
+    margin-left: 10px;
+    border-radius: 50px;
+    padding : 10px;
+    width: 150px;
+    border-color: gold;
+
+}
+
+.containerIMG {
+
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+}
+
+.divPersonnage{
+
+    border: solid 2px white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+    margin: 10px;
+    padding: 60px;
+    box-shadow:
+    0 0 45px #fff,
+    inset 0 0 1px #fff,
+    0 0 16px #fff,
+    inset 0 0 16px #fff,
+    0 0 32px #fff,
+    inset 0 0 32px #fff; 
+}
+
+/* Fin SearchBar StarWars */
+
+} 

@@ -1,0 +1,235 @@
+
+@media screen and (min-width: 600px) {
+
+    body {
+        font-size: 14px;
+    }
+
+* {
+    font-family: 'Star Wars', sans-serif;
+}
+
+/* debut navbar */
+
+nav {
+
+    height : 200px;
+    display: flex;
+}
+
+
+.conteneurLogo {
+
+    border: solid black 2px;
+    height:200px;
+}
+
+.conteneurLogoEpisode{
+
+    display: flex;
+    /* border: yellow 2px solid; */
+    justify-content: space-around;
+    align-items: center;
+    width: 80%;
+    height: 200px;
+    background-image: url("../images/etoiles.gif");
+ 
+}
+
+/* fin navbar */
+
+
+/* debut conteneur fil d'arianne */
+
+.conteneurProgression {
+
+    display: flex;
+    justify-content: center;
+    /* border: solid red 2px; */
+    height: 50px;
+    background-image: url("../images/etoiles.gif");
+   
+}
+
+
+.filArianne {
+    display: flex;
+    align-items: center;
+    /* border: solid red 2px; */
+    height:50px;
+    
+    
+}
+
+.filArianne ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center ;
+    list-style: none;
+    /* border: solid yellow 2px; */
+    height:20px;
+    padding-left: 0px;
+  
+}
+    
+.filArianne li:not(:last-child)::after {
+    content: "→";
+    color: white;
+}
+
+.filArianne a {
+
+    text-decoration: none;
+    color: white;
+    font-size: 1.3em;
+}
+
+.filArianne a:hover{
+
+    color: gold;
+}
+
+/* fin conteneur fil d'arianne */
+
+
+/* debut section perso */
+
+.personnage{
+
+    display: flex;
+    justify-content: space-around;
+    padding: 50px;
+    border: solid black 2px;
+    background-color: black;
+    background-image: url("../images/etoiles.gif");
+
+}
+
+.affichePersonnage{
+    
+    border: solid goldenrod 2px;
+    margin: 60px;
+
+}
+
+.tablePersonnage{
+    
+    margin: 60px;
+
+}
+
+.tablePersonnage th{
+
+    color: white;
+    background-color: goldenrod;
+    border: solid goldenrod 2px;
+    padding: 20px;
+    font-size: 1.3em;
+}
+
+
+.tablePersonnage td{
+    border: solid goldenrod 2px;
+    color:white;
+    padding: 50px;
+    overflow: auto;
+}
+
+.tablePersonnage li{
+    
+    list-style-type: none;
+}
+
+
+/* fin section perso */
+
+
+/* bloc Personnages */
+
+.conteneurPersonnages {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+    background-color: black;
+    color: white;
+    background-image: url("../images/etoiles.gif");
+
+}
+
+figcaption{
+
+margin-top: 50px;
+
+}
+
+/* fin bloc personnages */
+
+
+
+/* debut grid*/
+
+
+.image-grid {
+    border: solid red 2px;
+    display: grid;
+    grid-template-columns: 500px 400px 700px 100px;/* Créez des colonnes flexibles */
+    grid-gap: 20px; /* Espace entre les éléments */
+    max-width: 1200px; /* Largeur maximale du grid */
+    margin: 0 auto; /* Centrer le grid horizontalement */
+    padding: 20px; /* Marge intérieure pour l'espace autour du grid */
+    background-image: url("../images/etoiles.gif");
+    
+}
+
+/* Styles pour chaque élément image-item */
+.image-item {
+    border: 1px solid #ddd; /* Bordure autour de chaque image */
+    padding: 10px; /* Espace intérieur autour de chaque image */
+    text-align: center; /* Centrer le contenu dans chaque image-item */
+    
+}
+
+/* Styles pour les images à l'intérieur des éléments image-item */
+.image-item img {
+    max-width: 100%; /* Assurez-vous que les images ne dépassent pas la largeur de leur conteneur */
+    height: auto; /* Conservez le rapport hauteur/largeur de l'image */
+    background-image: url("../images/etoiles.gif");
+}
+
+
+/* fin grid */
+
+/* debut bloc réseaux sociaux */
+
+.ReseauxSociaux {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 400px;
+    padding-right: 400px;
+    background-color: goldenrod;
+
+}
+
+/* fin bloc réseaux sociaux */
+
+
+/* debut bloc copyright */
+
+.copyright {
+    display: flex;
+    justify-content: center;
+    background-color: goldenrod;
+
+}
+
+/* fin bloc copyright */
+
+
+/* fin footer  */
+
+} 
